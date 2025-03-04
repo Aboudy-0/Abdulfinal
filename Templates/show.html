@@ -17,7 +17,7 @@
         <p><b>Doctor :</b> {{ x.doctor }}</p>
         <p><b>Message :</b> {{ x.message }}</p>
         <p>
-            <a href="" class="text-warning me-5">
+            <a href="{% url 'edit' x.id%}" class="text-warning me-5">
                 <i class="bi bi-pencil"></i>Edit
             </a>
             <a href="/delete/{{ x.id }}" class="text-danger">
