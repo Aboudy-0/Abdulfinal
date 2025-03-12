@@ -8,7 +8,7 @@
    <div class="d-flex flex-wrap gap-3 container">
     {% for x in all%}
 
-        <div class="card w-30 shadow-lg p-3 ">
+        <div class="card w-30 shadow-lg p-3 text-black">
         <p class="text-primary">{{ x.name }}</p>
         <p><b>Email :</b> {{ x.email }}</p>
         <p><b>Phone :</b> {{ x.phone }}</p>
@@ -23,6 +23,13 @@
             <a href="/delete/{{ x.id }}" class="text-danger">
                 <i class="bi bi-trash"></i>Delete
             </a>
+
+            <a href="{% url 'pay' %}" class="text-success">
+                <i class="bi bi-credit-card ms-5"></i>Pay
+
+
+
+
 
         </p>
 
